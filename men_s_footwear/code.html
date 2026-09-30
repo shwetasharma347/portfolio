@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Men's Footwear - Silk Footwear</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-error-container": "#991b1b",
+                    "on-primary": "#ffffff",
+                    "on-secondary-fixed-variant": "#404252",
+                    "on-primary-container": "#e0e2ff",
+                    "secondary-fixed-dim": "#b8baca",
+                    "primary-container": "#818cf8",
+                    "on-surface-variant": "#585a68",
+                    "on-background": "#2e3040",
+                    "on-surface": "#2e3040",
+                    "on-secondary": "#ffffff",
+                    "on-tertiary": "#ffffff",
+                    "on-primary-fixed": "#1e1b4b",
+                    "on-secondary-container": "#585a68",
+                    "surface-bright": "#edeef4",
+                    "outline-variant": "#d0d2dc",
+                    "secondary": "#6c6e7e",
+                    "on-tertiary-fixed-variant": "#5b21b6",
+                    "inverse-surface": "#2e3040",
+                    "surface-container-high": "#dcdee4",
+                    "surface": "#e8eaf0",
+                    "on-primary-fixed-variant": "#4338ca",
+                    "surface-container": "#e2e4ea",
+                    "surface-container-lowest": "#f0f2f8",
+                    "primary-fixed": "#e0e2ff",
+                    "background": "#e8eaf0",
+                    "on-tertiary-container": "#3b1f63",
+                    "surface-tint": "#6366f1",
+                    "surface-container-highest": "#d6d8de",
+                    "inverse-primary": "#a5b4fc",
+                    "on-tertiary-fixed": "#2e1065",
+                    "on-secondary-fixed": "#1a1b26",
+                    "secondary-fixed": "#d8dae6",
+                    "error": "#dc2626",
+                    "outline": "#8a8c9a",
+                    "primary-fixed-dim": "#a5b4fc",
+                    "inverse-on-surface": "#e8eaf0",
+                    "surface-container-low": "#e5e7ed",
+                    "tertiary-fixed": "#ede9fe",
+                    "tertiary": "#7c3aed",
+                    "error-container": "#fee2e2",
+                    "surface-dim": "#d4d6dc",
+                    "tertiary-container": "#a78bfa",
+                    "on-error": "#ffffff",
+                    "surface-variant": "#dcdee4",
+                    "secondary-container": "#d8dae6",
+                    "tertiary-fixed-dim": "#c4b5fd",
+                    "primary": "#6366f1"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.5rem",
+                    "lg": "1rem",
+                    "xl": "1.5rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Plus Jakarta Sans"],
+                    "display": ["Plus Jakarta Sans"],
+                    "body": ["Plus Jakarta Sans"],
+                    "label": ["Plus Jakarta Sans"]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+        /* Neomorphic Utility Classes */
+        .neo-raised {
+            box-shadow: 6px 6px 12px rgba(0,0,0,0.08), -6px -6px 12px rgba(255,255,255,0.6);
+        }
+        .neo-pressed {
+            box-shadow: inset 4px 4px 8px rgba(0,0,0,0.06), inset -4px -4px 8px rgba(255,255,255,0.5);
+        }
+        
+        /* Smooth transitions */
+        .neo-transition {
+            transition: all 0.2s ease-in-out;
+        }
+        
+        /* Custom scrollbar for sidebar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        ::-webkit-scrollbar-thumb {
+            background-color: #d0d2dc;
+            border-radius: 9999px;
+        }
+        
+        body {
+            background-color: #e8eaf0; /* Essential for neomorphic effect */
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            color: #2e3040;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background min-h-screen flex flex-col font-body">
+<!-- TopAppBar -->
+<header class="bg-background dark:bg-background text-primary dark:text-primary font-body font-semibold text-on-surface dark:text-on-surface text-2xl tracking-tight sticky top-0 w-full z-50 shadow-[6px_6px_12px_rgba(0,0,0,0.08),-6px_-6px_12px_rgba(255,255,255,0.6)] flex justify-between items-center px-8 py-4 max-w-full mx-auto">
+<div class="flex items-center gap-4">
+<button class="text-on-surface-variant hover:text-primary transition-colors duration-200 active:shadow-[inset_4px_4px_8px_rgba(0,0,0,0.06),inset_-4px_-4px_8px_rgba(255,255,255,0.5)] p-2 rounded-full neo-transition">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+<span>SILK FOOTWEAR</span>
+</div>
+<nav class="hidden md:flex gap-6 items-center">
+<a class="text-primary dark:text-primary font-semibold hover:text-primary transition-colors duration-200 px-4 py-2 neo-pressed rounded-xl" href="#">Men</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors duration-200 px-4 py-2 rounded-xl neo-transition" href="#">Women</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors duration-200 px-4 py-2 rounded-xl neo-transition" href="#">Kids</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors duration-200 px-4 py-2 rounded-xl neo-transition" href="#">Sale</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors duration-200 px-4 py-2 rounded-xl neo-transition" href="#">New Arrivals</a>
+</nav>
+<button class="text-on-surface-variant hover:text-primary transition-colors duration-200 active:shadow-[inset_4px_4px_8px_rgba(0,0,0,0.06),inset_-4px_-4px_8px_rgba(255,255,255,0.5)] px-4 py-2 rounded-xl flex items-center gap-2 neo-raised neo-transition font-medium text-sm">
+            Cart
+        </button>
+</header>
+<!-- Main Content Layout -->
+<div class="flex flex-1 overflow-hidden relative">
+<!-- NavigationDrawer / Filter Sidebar (Hidden on mobile by default, toggled via JS) -->
+<aside class="hidden md:flex bg-background dark:bg-background text-primary dark:text-primary font-body font-medium text-xl text-on-surface h-full w-64 rounded-r-xl shadow-[6px_6px_12px_rgba(0,0,0,0.08),-6px_-6px_12px_rgba(255,255,255,0.6)] flex-col p-6 space-y-4 absolute md:static z-40 overflow-y-auto" id="filterSidebar">
+<div class="flex justify-between items-center mb-4">
+<span class="font-semibold text-lg">Filters</span>
+<button class="md:hidden text-on-surface-variant hover:text-primary p-2 rounded-full neo-raised neo-transition active:neo-pressed" id="closeSidebarBtn">
+<span class="material-symbols-outlined text-sm">close</span>
+</button>
+</div>
+<!-- Category Group (Mapped from JSON logic, though this page is specifically Men's) -->
+<div class="space-y-2 mb-6">
+<h3 class="text-sm font-semibold text-on-surface-variant mb-2 uppercase tracking-wider">Categories</h3>
+<a class="bg-background shadow-[inset_4px_4px_8px_rgba(0,0,0,0.06),inset_-4px_-4px_8px_rgba(255,255,255,0.5)] text-primary rounded-xl flex items-center gap-3 p-3 active:scale-95 transition-transform neo-transition" href="#">
+<span class="material-symbols-outlined" data-icon="male">male</span>
+<span class="text-base">Men</span>
+</a>
+<a class="text-on-surface-variant hover:bg-surface-container-low rounded-xl transition-all flex items-center gap-3 p-3 active:scale-95 neo-transition" href="#">
+<span class="material-symbols-outlined" data-icon="female">female</span>
+<span class="text-base">Women</span>
+</a>
+</div>
+<!-- Dynamic Filters -->
+<div class="space-y-6">
+<!-- Size Filter -->
+<div>
+<h3 class="text-sm font-semibold text-on-surface-variant mb-3 uppercase tracking-wider">Size</h3>
+<div class="grid grid-cols-3 gap-2">
+<button class="neo-raised neo-transition hover:text-primary active:neo-pressed rounded-lg py-2 text-sm text-on-surface">8</button>
+<button class="neo-raised neo-transition hover:text-primary active:neo-pressed rounded-lg py-2 text-sm text-on-surface">9</button>
+<button class="neo-pressed text-primary rounded-lg py-2 text-sm font-semibold">10</button>
+<button class="neo-raised neo-transition hover:text-primary active:neo-pressed rounded-lg py-2 text-sm text-on-surface">11</button>
+<button class="neo-raised neo-transition hover:text-primary active:neo-pressed rounded-lg py-2 text-sm text-on-surface">12</button>
+<button class="neo-raised neo-transition hover:text-primary active:neo-pressed rounded-lg py-2 text-sm text-on-surface">13</button>
+</div>
+</div>
+<!-- Occasion Filter -->
+<div>
+<h3 class="text-sm font-semibold text-on-surface-variant mb-3 uppercase tracking-wider">Occasion</h3>
+<div class="space-y-2">
+<label class="flex items-center gap-3 cursor-pointer group">
+<div class="w-5 h-5 rounded-md neo-pressed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-xs hidden group-hover:block" data-icon="check">check</span>
+</div>
+<span class="text-sm text-on-surface">Casual</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<div class="w-5 h-5 rounded-md neo-pressed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-xs" data-icon="check">check</span>
+</div>
+<span class="text-sm text-on-surface font-medium">Athletic</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<div class="w-5 h-5 rounded-md neo-pressed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-xs hidden group-hover:block" data-icon="check">check</span>
+</div>
+<span class="text-sm text-on-surface">Formal</span>
+</label>
+</div>
+</div>
+</div>
+<div class="mt-auto pt-6">
+<button class="w-full neo-raised text-primary font-semibold py-3 rounded-xl hover:text-tertiary neo-transition active:neo-pressed text-sm">
+                    Apply Filters
+                </button>
+</div>
+</aside>
+<!-- Product Canvas -->
+<main class="flex-1 overflow-y-auto p-4 md:p-8 bg-background">
+<!-- Mobile Filter Toggle -->
+<div class="md:hidden flex justify-between items-center mb-6">
+<h1 class="font-headline font-bold text-2xl text-on-surface">Men's</h1>
+<button class="neo-raised text-on-surface-variant hover:text-primary p-3 rounded-xl flex items-center gap-2 neo-transition active:neo-pressed text-sm font-medium" id="mobileFilterBtn">
+<span class="material-symbols-outlined text-sm" data-icon="tune">tune</span>
+                    Filters
+                </button>
+</div>
+<!-- Banner -->
+<div class="w-full rounded-2xl neo-pressed p-8 mb-8 relative overflow-hidden flex flex-col justify-center items-start min-h-[200px]">
+<div class="relative z-10 max-w-lg">
+<h2 class="font-headline font-bold text-3xl md:text-4xl text-on-surface mb-2 tracking-tight">Engineered for Performance &amp; Style</h2>
+<p class="font-body text-on-surface-variant text-sm md:text-base">Discover the new men's collection featuring ultra-lightweight materials and our signature neomorphic comfort sole technology.</p>
+</div>
+<!-- Abstract subtle graphic for banner bg -->
+<div class="absolute right-0 top-0 bottom-0 w-1/2 opacity-20 pointer-events-none">
+<div class="w-full h-full bg-cover bg-center" data-alt="Abstract minimal 3d graphic showing smooth flowing fabric or liquid in soft indigo and cool gray tones, bright light mode aesthetic, soft shadows, high end product backdrop, shallow depth of field, macro photography style." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDbefBk1o_Fkxf4NoXU2DVfvHh9PO7HCmqBKrTZpoW7J2RXG2uaH0VUzXsspUx9ES8I3uVT7ksZpuaQjmctWRJUN7pV206YR8FiogsnCnlkypnSYDH0V6olS9wlsFMeZZ6nmZ3g1TezTP3ivmaSXltc-bzKq4g5Z3FRziEn4djRI2H73gd2z6SBbejmI8EE9DocX0mlet5IlAdThg_BraPWzPpRAUfGZXiumn-13VZLRChF-Trj0ac')"></div>
+</div>
+</div>
+<!-- Product Grid -->
+<div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-8">
+<!-- Product Card 1 -->
+<div class="group relative rounded-2xl bg-background neo-raised p-4 flex flex-col neo-transition hover:-translate-y-1">
+<div class="relative w-full aspect-square rounded-xl neo-pressed overflow-hidden mb-4">
+<img class="w-full h-full object-cover mix-blend-multiply group-hover:hidden transition-opacity duration-300" data-alt="A sleek, modern men's athletic running shoe in minimal cool gray and indigo colors, floating in a bright studio environment, soft high-key lighting, neomorphic smooth textures, premium activewear product photography, side profile view." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD12KYTgWesRslAL7CxHX_K_SIBn96-8QPn_P7kwVqEiE5XAvUeHCqHjI063yiOTvUTl898nytWQIpVA46FcPn5oGAMQFhx3iMMTXb9o63gBLOAzlQ9E6xNP4yh2BCbXWMPeKOLRLZKeJPTmCNf4idZTRRImkbZZIo9U87QtvBxGmmOruoPAWkgTbYKrjp9OXCXgH8BdUiaqE8aji2VjUdKcNzAvIMKvLT85YizoId9cLvN8Nizz7w"/>
+<!-- Secondary Angle on Hover -->
+<img class="w-full h-full object-cover mix-blend-multiply hidden group-hover:block transition-opacity duration-300" data-alt="A top-down angle view of a sleek modern men's athletic running shoe in minimal cool gray and indigo, bright studio lighting, showing the breathable mesh texture and inner sole design, premium product photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbqc4j4bmGwLd_-FyZE_A6kH7b-uHTwhHAbpJei_w8vh4nDpcMYH4kqPSkpxfzk002T4Mnmzrw0TKvCv6ClnRSFkR7Q95jgVKKDu1wDLQgVdmulV7g4X3ool8Tiqo9vIZkKwq9v5mVR21SzyOjsLgXM76-yeZzAVndLSWgnBhwjbFBR0xjtMD0zulJ7TYgP42PF8TFNGrqtKzSQcjDK3MkZ9BacmuQEXPoxpg9u0d3EdfWtLeJYT0"/>
+<button class="absolute top-2 right-2 w-8 h-8 rounded-full bg-background neo-raised flex items-center justify-center text-on-surface-variant hover:text-error neo-transition active:neo-pressed z-10">
+<span class="material-symbols-outlined text-[18px]" data-icon="favorite">favorite</span>
+</button>
+</div>
+<div class="flex-1 flex flex-col">
+<span class="text-xs font-semibold text-primary mb-1 uppercase tracking-wider">Athletic</span>
+<h3 class="font-headline font-semibold text-on-surface text-base md:text-lg mb-1 leading-tight line-clamp-1">Aero Glide Pro</h3>
+<p class="font-body text-on-surface-variant text-sm mb-4">$145.00</p>
+<button class="mt-auto w-full neo-raised bg-background text-primary font-medium py-2 rounded-xl flex items-center justify-center gap-2 hover:text-tertiary neo-transition active:neo-pressed text-sm">
+<span class="material-symbols-outlined text-[18px]" data-icon="add_shopping_cart">add_shopping_cart</span>
+                            Quick Add
+                        </button>
+</div>
+</div>
+<!-- Product Card 2 -->
+<div class="group relative rounded-2xl bg-background neo-raised p-4 flex flex-col neo-transition hover:-translate-y-1">
+<div class="relative w-full aspect-square rounded-xl neo-pressed overflow-hidden mb-4">
+<img class="w-full h-full object-cover mix-blend-multiply group-hover:hidden transition-opacity duration-300" data-alt="A sophisticated men's casual suede loafer in soft slate gray, resting on a smooth surface, bright minimalist lighting, elegant subtle neomorphic styling, premium lifestyle product photography, side view." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdW5L0bRDuWSWmP7OlISx3QvHerxxmmaYMTDR1-Kp-mPB4LlftEmsmoyXTpjHxXdOe240D-pEKc9FA8UolEWujIL64Y5XBd46uivTOVpXd3ltWuifQy0o8Z1jI_rDEitXOBed2wh04MZbZsVkmUgVVZoLPa5A7b8njXs5wqt_rRr97kEPsVCHLo-6dVC4B36tzGFu8qmyxrEqPFkvbfeB5UhXsumUeHYIq5-dEP74DRBKZaTOWVIg"/>
+<img class="w-full h-full object-cover mix-blend-multiply hidden group-hover:block transition-opacity duration-300" data-alt="A detailed macro shot of a men's suede loafer showing the fine stitching and premium slate gray texture, soft high-key studio lighting, lifestyle luxury product photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUDPjarVl9BeFRmLznIAFiCieEERRhni0ZSmXaXNrJbme2OO0l8zAA3rqTf9nYbhs-AZi-8x1u6PM-WAyBE120XiUb5tbV4MCzZ0cMF-FkvuKXi4yaEUcRaRlK6RPBq-sbhvct_EeohxaLmQyyCEFzlyfrFwwLq2LFsV7FZ4BzB9HnCmutIR73j3SLH-MqMixNTYP55ZDrsO8LCHxXYLOyo_cG-mXoNGsf-6ZTUMzxerdM33sEYwU"/>
+<button class="absolute top-2 right-2 w-8 h-8 rounded-full bg-background neo-raised flex items-center justify-center text-on-surface-variant hover:text-error neo-transition active:neo-pressed z-10">
+<span class="material-symbols-outlined text-[18px]" data-icon="favorite">favorite</span>
+</button>
+</div>
+<div class="flex-1 flex flex-col">
+<span class="text-xs font-semibold text-primary mb-1 uppercase tracking-wider">Casual</span>
+<h3 class="font-headline font-semibold text-on-surface text-base md:text-lg mb-1 leading-tight line-clamp-1">Sunday Suede Loafer</h3>
+<p class="font-body text-on-surface-variant text-sm mb-4">$110.00</p>
+<button class="mt-auto w-full neo-raised bg-background text-primary font-medium py-2 rounded-xl flex items-center justify-center gap-2 hover:text-tertiary neo-transition active:neo-pressed text-sm">
+<span class="material-symbols-outlined text-[18px]" data-icon="add_shopping_cart">add_shopping_cart</span>
+                            Quick Add
+                        </button>
+</div>
+</div>
+</div>
+</main>
+</div>
+<!-- Footer -->
+<footer class="bg-background dark:bg-background text-primary dark:text-primary font-body text-sm text-on-surface-variant font-semibold text-on-surface w-full rounded-t-xl mt-auto shadow-[-6px_-6px_12px_rgba(255,255,255,0.6)] grid grid-cols-1 md:grid-cols-3 gap-8 px-12 py-16">
+<div class="flex flex-col space-y-4">
+<span class="text-xl font-bold tracking-tight text-on-surface">SILK FOOTWEAR</span>
+<p>© 2024 Silk Footwear Co. All rights reserved.</p>
+</div>
+<div class="flex flex-col space-y-2">
+<h4 class="font-bold text-on-surface mb-2">Customer Care</h4>
+<a class="text-on-surface-variant hover:text-primary transition-colors cursor-pointer" href="#">Support</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors cursor-pointer" href="#">Shipping</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors cursor-pointer" href="#">Returns</a>
+</div>
+<div class="flex flex-col space-y-2">
+<h4 class="font-bold text-on-surface mb-2">Legal</h4>
+<a class="text-on-surface-variant hover:text-primary transition-colors cursor-pointer" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors cursor-pointer" href="#">Terms</a>
+</div>
+</footer>
+<script>
+        // Simple JS for mobile filter sidebar toggle
+        document.addEventListener('DOMContentLoaded', () => {
+            const mobileFilterBtn = document.getElementById('mobileFilterBtn');
+            const closeSidebarBtn = document.getElementById('closeSidebarBtn');
+            const filterSidebar = document.getElementById('filterSidebar');
+
+            if(mobileFilterBtn && filterSidebar && closeSidebarBtn) {
+                mobileFilterBtn.addEventListener('click', () => {
+                    filterSidebar.classList.remove('hidden');
+                    filterSidebar.classList.add('flex', 'absolute', 'inset-0', 'bg-background/95', 'backdrop-blur-md', 'w-full', 'h-full');
+                });
+
+                closeSidebarBtn.addEventListener('click', () => {
+                    filterSidebar.classList.add('hidden');
+                    filterSidebar.classList.remove('flex', 'absolute', 'inset-0', 'bg-background/95', 'backdrop-blur-md', 'w-full', 'h-full');
+                });
+            }
+        });
+    </script>
+</body></html>

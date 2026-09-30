@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Silk Footwear - Trending</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-error-container": "#991b1b",
+                    "on-primary": "#ffffff",
+                    "on-secondary-fixed-variant": "#404252",
+                    "on-primary-container": "#e0e2ff",
+                    "secondary-fixed-dim": "#b8baca",
+                    "primary-container": "#818cf8",
+                    "on-surface-variant": "#585a68",
+                    "on-background": "#2e3040",
+                    "on-surface": "#2e3040",
+                    "on-secondary": "#ffffff",
+                    "on-tertiary": "#ffffff",
+                    "on-primary-fixed": "#1e1b4b",
+                    "on-secondary-container": "#585a68",
+                    "surface-bright": "#edeef4",
+                    "outline-variant": "#d0d2dc",
+                    "secondary": "#6c6e7e",
+                    "on-tertiary-fixed-variant": "#5b21b6",
+                    "inverse-surface": "#2e3040",
+                    "surface-container-high": "#dcdee4",
+                    "surface": "#e8eaf0",
+                    "on-primary-fixed-variant": "#4338ca",
+                    "surface-container": "#e2e4ea",
+                    "surface-container-lowest": "#f0f2f8",
+                    "primary-fixed": "#e0e2ff",
+                    "background": "#e8eaf0",
+                    "on-tertiary-container": "#3b1f63",
+                    "surface-tint": "#6366f1",
+                    "surface-container-highest": "#d6d8de",
+                    "inverse-primary": "#a5b4fc",
+                    "on-tertiary-fixed": "#2e1065",
+                    "on-secondary-fixed": "#1a1b26",
+                    "secondary-fixed": "#d8dae6",
+                    "error": "#dc2626",
+                    "outline": "#8a8c9a",
+                    "primary-fixed-dim": "#a5b4fc",
+                    "inverse-on-surface": "#e8eaf0",
+                    "surface-container-low": "#e5e7ed",
+                    "tertiary-fixed": "#ede9fe",
+                    "tertiary": "#7c3aed",
+                    "error-container": "#fee2e2",
+                    "surface-dim": "#d4d6dc",
+                    "tertiary-container": "#a78bfa",
+                    "on-error": "#ffffff",
+                    "surface-variant": "#dcdee4",
+                    "secondary-container": "#d8dae6",
+                    "tertiary-fixed-dim": "#c4b5fd",
+                    "primary": "#6366f1"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.5rem",
+                    "lg": "1rem",
+                    "xl": "1.5rem",
+                    "full": "9999px"
+            },
+            "spacing": {},
+            "fontFamily": {
+                    "headline": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "display": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "body": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "label": [
+                            "Plus Jakarta Sans"
+                    ]
+            },
+            "fontSize": {}
+    },
+        },
+      }
+    </script>
+<style>
+        /* Base Neomorphic Utility Classes */
+        .neo-raised {
+            box-shadow: 6px 6px 12px rgba(0,0,0,0.08), -6px -6px 12px rgba(255,255,255,0.6);
+        }
+        .neo-pressed {
+            box-shadow: inset 4px 4px 8px rgba(0,0,0,0.06), inset -4px -4px 8px rgba(255,255,255,0.5);
+        }
+        .neo-interactive:active {
+            box-shadow: inset 4px 4px 8px rgba(0,0,0,0.06), inset -4px -4px 8px rgba(255,255,255,0.5);
+            transform: scale(0.98);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface font-body min-h-screen flex flex-col antialiased">
+<!-- TopAppBar -->
+<header class="bg-background text-primary font-body font-semibold text-on-surface text-2xl tracking-tight sticky top-0 w-full z-50 shadow-[6px_6px_12px_rgba(0,0,0,0.08),-6px_-6px_12px_rgba(255,255,255,0.6)] flex justify-between items-center px-8 py-4 max-w-full mx-auto">
+<button class="text-on-surface-variant hover:text-primary transition-colors duration-200 active:shadow-[inset_4px_4px_8px_rgba(0,0,0,0.06),inset_-4px_-4px_8px_rgba(255,255,255,0.5)] transition-all p-2 rounded-xl flex items-center justify-center neo-raised">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+<div class="font-bold tracking-tight text-on-surface">SILK FOOTWEAR</div>
+<button class="text-on-surface-variant hover:text-primary transition-colors duration-200 active:shadow-[inset_4px_4px_8px_rgba(0,0,0,0.06),inset_-4px_-4px_8px_rgba(255,255,255,0.5)] transition-all px-4 py-2 rounded-xl font-medium flex items-center justify-center neo-raised">
+            Cart
+        </button>
+</header>
+<div class="flex flex-1 overflow-hidden">
+<!-- NavigationDrawer (Hidden on mobile, flex on md) -->
+<nav class="hidden md:flex bg-background font-body font-medium h-full w-64 rounded-r-xl shadow-[6px_6px_12px_rgba(0,0,0,0.08),-6px_-6px_12px_rgba(255,255,255,0.6)] flex-col p-6 space-y-4 shrink-0">
+<div class="text-xl font-semibold text-on-surface mb-4 px-4">Categories</div>
+<a class="text-on-surface-variant hover:bg-surface-container-low rounded-xl transition-all active:scale-95 transition-transform flex items-center px-4 py-3 gap-3" href="#">
+<span class="material-symbols-outlined" data-icon="male">male</span>
+<span>Men</span>
+</a>
+<a class="text-on-surface-variant hover:bg-surface-container-low rounded-xl transition-all active:scale-95 transition-transform flex items-center px-4 py-3 gap-3" href="#">
+<span class="material-symbols-outlined" data-icon="female">female</span>
+<span>Women</span>
+</a>
+<a class="text-on-surface-variant hover:bg-surface-container-low rounded-xl transition-all active:scale-95 transition-transform flex items-center px-4 py-3 gap-3" href="#">
+<span class="material-symbols-outlined" data-icon="child_care">child_care</span>
+<span>Kids</span>
+</a>
+<a class="text-on-surface-variant hover:bg-surface-container-low rounded-xl transition-all active:scale-95 transition-transform flex items-center px-4 py-3 gap-3" href="#">
+<span class="material-symbols-outlined" data-icon="sell">sell</span>
+<span>Sale</span>
+</a>
+<!-- Active State -->
+<a class="bg-background shadow-[inset_4px_4px_8px_rgba(0,0,0,0.06),inset_-4px_-4px_8px_rgba(255,255,255,0.5)] text-primary rounded-xl flex items-center px-4 py-3 gap-3" href="#">
+<span class="material-symbols-outlined" data-icon="new_releases">new_releases</span>
+<span>New Arrivals</span>
+</a>
+</nav>
+<!-- Main Content Area -->
+<main class="flex-1 overflow-y-auto p-4 md:p-8">
+<div class="max-w-7xl mx-auto space-y-12">
+<!-- Editorial Header -->
+<section class="text-center py-12">
+<h1 class="font-headline font-semibold text-4xl md:text-6xl text-on-surface tracking-tight mb-4">Trending Now</h1>
+<p class="font-body text-on-surface-variant text-lg max-w-2xl mx-auto">The styles dominating your feed. Curated looks, viral silhouettes, and community favorites.</p>
+</section>
+<!-- Bento Grid Layout -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8">
+<!-- Featured Viral Style (Full Width / Large on desktop) -->
+<div class="md:col-span-8 bg-background rounded-xl p-6 neo-raised flex flex-col md:flex-row gap-6 items-center">
+<div class="w-full md:w-1/2 aspect-square md:aspect-auto md:h-full rounded-lg overflow-hidden neo-pressed p-2">
+<img class="w-full h-full object-cover rounded-lg" data-alt="A high-fashion, editorial style photograph of a modern, sleek sneaker in a minimalist urban setting. The sneaker features clean lines, a subtle indigo accent, and a futuristic silhouette. The lighting is soft and diffused, creating a serene, premium atmosphere. The overall color palette relies on cool grays, deep blacks, and a touch of vibrant indigo, perfectly aligning with a soft, neomorphic aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqvllBCZJBwnJh44P4Gg928YR-nhyDxWkQbA3oTeGlVy9_6GOcEkmlcSZlI0ASNK0QmdpkvlwrquG3iet3Etq-y6-oR5EtHQHuEsq-UGapcTqHKBcQtD_QkZwPvXRHnYBRDDQn4P9lohX5UTJ9ZQbBu9tBYfWHZOvwmainVnZJ-pWGSqjNtsVLR6tZcd809V8nKFOtZ39tcN1Vi84_HZIr_ok_v8jvRWv2X8PvTrWvWWfvUyzKhpE"/>
+</div>
+<div class="w-full md:w-1/2 flex flex-col justify-center space-y-4 pr-4">
+<div class="inline-flex items-center gap-1 text-primary text-sm font-semibold tracking-wider uppercase">
+<span class="material-symbols-outlined text-sm" data-icon="local_fire_department" data-weight="fill" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+                                Viral Pick
+                            </div>
+<h2 class="font-headline font-semibold text-3xl text-on-surface">The 'Aura' Runner</h2>
+<p class="text-on-surface-variant">Spotted on streets from Tokyo to New York. The Aura redefines daily comfort with a hyper-minimalist profile and unparalleled cushioning.</p>
+<button class="bg-background text-primary font-semibold py-3 px-6 rounded-full neo-raised neo-interactive w-max mt-4 flex items-center gap-2">
+                                Shop Aura <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- UGC Highlight (Side Column) -->
+<div class="md:col-span-4 bg-background rounded-xl p-6 neo-raised flex flex-col">
+<h3 class="font-headline font-medium text-lg text-on-surface mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary" data-icon="alternate_email">alternate_email</span>
+                            Community Spotted
+                        </h3>
+<div class="w-full aspect-[4/5] rounded-lg overflow-hidden neo-pressed p-2 mb-4">
+<img class="w-full h-full object-cover rounded-lg" data-alt="A user-generated style photograph showcasing stylish street footwear on a concrete pavement. The lighting is natural, casting soft shadows that emphasize the texture of the shoes. The scene is candid yet fashionable, reflecting a modern, casual aesthetic. The color palette incorporates cool grays and crisp whites, maintaining a cohesive, light-mode neomorphic vibe." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwphx86R-Tdr_P0HQNVwDy_Cs-mXsxQ6FFybg6WS4uF49Dojr9zJfU0gZXftOVZ-NZ53CFLX_zT8FlgPxluuB8OGjRKkDf21ZAd05m_6LzY8Mrwdh2OcpWoN_foAupbGPFz0D31oSYf8osogME_YoqyAX_NvH52Trhpmq3AqoGJ3hAPpGJXXdNInTyb9tAloHHc4Z4ifhCAt5bgjlv1Da-Mg9r8jR4JVM4ml_uZrTMmKZ5X_1HayA"/>
+</div>
+<div class="flex items-center justify-between mt-auto">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-surface-variant flex items-center justify-center neo-pressed">
+<span class="material-symbols-outlined text-sm text-on-surface-variant" data-icon="person">person</span>
+</div>
+<span class="text-sm font-medium text-on-surface-variant">@stylemaven_</span>
+</div>
+<button class="w-8 h-8 rounded-full flex items-center justify-center neo-raised neo-interactive text-on-surface-variant hover:text-error transition-colors">
+<span class="material-symbols-outlined text-sm" data-icon="favorite">favorite</span>
+</button>
+</div>
+</div>
+<!-- Quote Card (Neomorphic Pressed) -->
+<div class="col-span-1 md:col-span-4 bg-background rounded-xl p-8 neo-pressed flex flex-col justify-center items-center text-center">
+<span class="material-symbols-outlined text-4xl text-outline-variant mb-4" data-icon="format_quote" data-weight="fill" style="font-variation-settings: 'FILL' 1;">format_quote</span>
+<p class="font-body text-lg text-on-surface italic mb-6">"Silk has completely ruined other shoes for me. The comfort is insane, and the aesthetic just works with literally everything in my wardrobe."</p>
+<div class="text-sm font-semibold text-primary">— Highsnobiety Review</div>
+</div>
+<!-- Influencer Pick 1 -->
+<div class="col-span-1 md:col-span-4 bg-background rounded-xl p-5 neo-raised group cursor-pointer">
+<div class="w-full aspect-square rounded-lg overflow-hidden neo-pressed p-2 mb-4 relative">
+<img class="w-full h-full object-cover rounded-lg group-hover:scale-105 transition-transform duration-500" data-alt="A clean, studio shot of a minimalist slip-on shoe resting on a smooth, slightly reflective light gray surface. The lighting is high-key and soft, creating a seamless, floating effect. The shoe itself features a matte finish in a subtle cool gray tone. The overall image heavily leans into a pristine, neomorphic light-mode aesthetic, devoid of harsh shadows." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEFZ_LTdbSDNm5P0Og2hfxIKSnLg4h8M_I1JlJ9uA1JEzclG8mPty077vhYwt6rdMI8Y4PdtLIQN79R45OKkV3ZQLT2NxUefA954ZZvqCz6yQJwvspiaVVt9IbGgu13rnKJFYU430qYaADgdWf_uXTq-2gzSLmgeBr_kNYssWgexLJcqhqlmcgps3k4Z2j9lkVhsDczuPZQuAj-i49d6RG3ZfDQSgEPZFADp5XgHTe8jdwrK6rXWc"/>
+<div class="absolute top-4 left-4 bg-background/80 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-semibold text-on-surface shadow-sm">
+                                Staff Pick
+                            </div>
+</div>
+<h3 class="font-headline font-semibold text-xl text-on-surface mb-1">Nimbus Slip-On</h3>
+<p class="text-sm text-on-surface-variant mb-4">Cloud Gray</p>
+<div class="flex justify-between items-center">
+<span class="font-medium text-on-surface">$115</span>
+<button class="w-10 h-10 rounded-full flex items-center justify-center neo-raised neo-interactive text-primary">
+<span class="material-symbols-outlined" data-icon="add_shopping_cart">add_shopping_cart</span>
+</button>
+</div>
+</div>
+<!-- Influencer Pick 2 -->
+<div class="col-span-1 md:col-span-4 bg-background rounded-xl p-5 neo-raised group cursor-pointer">
+<div class="w-full aspect-square rounded-lg overflow-hidden neo-pressed p-2 mb-4 relative">
+<img class="w-full h-full object-cover rounded-lg group-hover:scale-105 transition-transform duration-500" data-alt="An editorial close-up of a structured, modern boot rendered in deep violet and cool gray tones. The setting is minimal, with soft directional lighting highlighting the precise stitching and premium materials. The background is a continuous, smooth gray surface, creating a dimensional, soft-UI visual feel. The aesthetic is sophisticated, modern, and aligned with high-end digital design." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB53Og9-jPqtK7cb5gmsfYym1QXJ6eb1u_yjeG1AOx-peZ6N37mC873QIMiksw6AIjcLRZpfj7-4T_QAK2yvYnHkkYLWjWbhUNILiY_629di7sSe8SrccqTTrm56G71ym8DMnmZNnaFWJKCs23_5n48Nyhz1Xk8FkT78HpMeP14SfVLW_QPZSpUTVD6xL6f2NSJB1w_dzAV5iZS0DfMzTlgh-I4b3p4idAVQpDa_O968UTUD3E_ECk"/>
+<div class="absolute top-4 left-4 bg-background/80 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-semibold text-on-surface shadow-sm">
+                                Trending
+                            </div>
+</div>
+<h3 class="font-headline font-semibold text-xl text-on-surface mb-1">Apex Boot</h3>
+<p class="text-sm text-on-surface-variant mb-4">Deep Violet</p>
+<div class="flex justify-between items-center">
+<span class="font-medium text-on-surface">$160</span>
+<button class="w-10 h-10 rounded-full flex items-center justify-center neo-raised neo-interactive text-primary">
+<span class="material-symbols-outlined" data-icon="add_shopping_cart">add_shopping_cart</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Call to Action Banner -->
+<section class="bg-background rounded-xl p-8 md:p-12 neo-raised text-center mt-12 mb-8 flex flex-col items-center">
+<h2 class="font-headline font-semibold text-2xl md:text-3xl text-on-surface mb-4">Join the Movement</h2>
+<p class="text-on-surface-variant max-w-lg mb-8">Tag us in your fits using #SilkStrides to be featured on our trending page and win exclusive weekly drops.</p>
+<div class="flex gap-4">
+<button class="bg-background text-primary font-semibold py-3 px-8 rounded-full neo-raised neo-interactive flex items-center gap-2">
+<span class="material-symbols-outlined" data-icon="photo_camera">photo_camera</span> Explore Gallery
+                        </button>
+</div>
+</section>
+</div>
+</main>
+</div>
+<!-- Footer -->
+<footer class="bg-background text-primary font-body text-sm text-on-surface-variant font-semibold text-on-surface w-full rounded-t-xl mt-auto shadow-[-6px_-6px_12px_rgba(255,255,255,0.6)] grid grid-cols-1 md:grid-cols-3 gap-8 px-12 py-16 w-full">
+<div class="flex flex-col space-y-4">
+<span class="font-headline font-bold text-lg text-on-surface">SILK FOOTWEAR</span>
+<p>© 2024 Silk Footwear Co. All rights reserved.</p>
+</div>
+<div class="flex flex-col space-y-3">
+<a class="text-on-surface-variant hover:text-primary transition-colors cursor-pointer w-max" href="#">Support</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors cursor-pointer w-max" href="#">Shipping</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors cursor-pointer w-max" href="#">Returns</a>
+</div>
+<div class="flex flex-col space-y-3">
+<a class="text-on-surface-variant hover:text-primary transition-colors cursor-pointer w-max" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors cursor-pointer w-max" href="#">Terms</a>
+</div>
+</footer>
+</body></html>

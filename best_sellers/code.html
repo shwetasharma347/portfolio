@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Silk Footwear - Best Sellers</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-error-container": "#991b1b",
+                        "on-primary": "#ffffff",
+                        "on-secondary-fixed-variant": "#404252",
+                        "on-primary-container": "#e0e2ff",
+                        "secondary-fixed-dim": "#b8baca",
+                        "primary-container": "#818cf8",
+                        "on-surface-variant": "#585a68",
+                        "on-background": "#2e3040",
+                        "on-surface": "#2e3040",
+                        "on-secondary": "#ffffff",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-fixed": "#1e1b4b",
+                        "on-secondary-container": "#585a68",
+                        "surface-bright": "#edeef4",
+                        "outline-variant": "#d0d2dc",
+                        "secondary": "#6c6e7e",
+                        "on-tertiary-fixed-variant": "#5b21b6",
+                        "inverse-surface": "#2e3040",
+                        "surface-container-high": "#dcdee4",
+                        "surface": "#e8eaf0",
+                        "on-primary-fixed-variant": "#4338ca",
+                        "surface-container": "#e2e4ea",
+                        "surface-container-lowest": "#f0f2f8",
+                        "primary-fixed": "#e0e2ff",
+                        "background": "#e8eaf0",
+                        "on-tertiary-container": "#3b1f63",
+                        "surface-tint": "#6366f1",
+                        "surface-container-highest": "#d6d8de",
+                        "inverse-primary": "#a5b4fc",
+                        "on-tertiary-fixed": "#2e1065",
+                        "on-secondary-fixed": "#1a1b26",
+                        "secondary-fixed": "#d8dae6",
+                        "error": "#dc2626",
+                        "outline": "#8a8c9a",
+                        "primary-fixed-dim": "#a5b4fc",
+                        "inverse-on-surface": "#e8eaf0",
+                        "surface-container-low": "#e5e7ed",
+                        "tertiary-fixed": "#ede9fe",
+                        "tertiary": "#7c3aed",
+                        "error-container": "#fee2e2",
+                        "surface-dim": "#d4d6dc",
+                        "tertiary-container": "#a78bfa",
+                        "on-error": "#ffffff",
+                        "surface-variant": "#dcdee4",
+                        "secondary-container": "#d8dae6",
+                        "tertiary-fixed-dim": "#c4b5fd",
+                        "primary": "#6366f1"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Plus Jakarta Sans", "sans-serif"],
+                        "display": ["Plus Jakarta Sans", "sans-serif"],
+                        "body": ["Plus Jakarta Sans", "sans-serif"],
+                        "label": ["Plus Jakarta Sans", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #e8eaf0;
+            color: #2e3040;
+        }
+        
+        .neo-raised {
+            box-shadow: 6px 6px 12px rgba(0,0,0,0.08), -6px -6px 12px rgba(255,255,255,0.6);
+        }
+        
+        .neo-pressed {
+            box-shadow: inset 4px 4px 8px rgba(0,0,0,0.06), inset -4px -4px 8px rgba(255,255,255,0.5);
+        }
+
+        .neo-interactive:active {
+            box-shadow: inset 4px 4px 8px rgba(0,0,0,0.06), inset -4px -4px 8px rgba(255,255,255,0.5);
+            transform: scale(0.98);
+        }
+        
+        .neo-interactive {
+            transition: all 0.2s ease;
+        }
+        
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined.filled {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background min-h-screen flex flex-col">
+<!-- TopAppBar -->
+<header class="bg-background dark:bg-background sticky top-0 w-full z-50 shadow-[6px_6px_12px_rgba(0,0,0,0.08),-6px_-6px_12px_rgba(255,255,255,0.6)]">
+<div class="flex justify-between items-center px-8 py-4 max-w-full mx-auto">
+<button class="neo-raised p-2 rounded-xl text-on-surface dark:text-on-surface neo-interactive hover:text-primary transition-colors duration-200">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+<h1 class="text-2xl font-semibold tracking-tight text-on-surface dark:text-on-surface font-headline">SILK FOOTWEAR</h1>
+<button class="neo-raised px-4 py-2 rounded-xl text-on-surface dark:text-on-surface font-body font-semibold neo-interactive hover:text-primary transition-colors duration-200 flex items-center gap-2">
+                Cart
+                <span class="material-symbols-outlined">shopping_bag</span>
+</button>
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex-grow w-full max-w-7xl mx-auto px-4 md:px-8 py-12 flex flex-col md:flex-row gap-8">
+<!-- NavigationDrawer (Sidebar on Desktop) -->
+<aside class="hidden md:flex flex-col p-6 space-y-4 bg-background dark:bg-background h-full w-64 rounded-r-xl shadow-[6px_6px_12px_rgba(0,0,0,0.08),-6px_-6px_12px_rgba(255,255,255,0.6)] flex-shrink-0">
+<h2 class="text-xl font-semibold text-on-surface font-headline mb-4">Categories</h2>
+<nav class="flex flex-col gap-3 font-body font-medium">
+<a class="flex items-center gap-3 p-3 text-on-surface-variant hover:bg-surface-container-low rounded-xl transition-all neo-interactive active:scale-95" href="#">
+<span class="material-symbols-outlined" data-icon="male">male</span>
+                    Men
+                </a>
+<a class="flex items-center gap-3 p-3 text-on-surface-variant hover:bg-surface-container-low rounded-xl transition-all neo-interactive active:scale-95" href="#">
+<span class="material-symbols-outlined" data-icon="female">female</span>
+                    Women
+                </a>
+<a class="flex items-center gap-3 p-3 text-on-surface-variant hover:bg-surface-container-low rounded-xl transition-all neo-interactive active:scale-95" href="#">
+<span class="material-symbols-outlined" data-icon="child_care">child_care</span>
+                    Kids
+                </a>
+<a class="flex items-center gap-3 p-3 bg-background shadow-[inset_4px_4px_8px_rgba(0,0,0,0.06),inset_-4px_-4px_8px_rgba(255,255,255,0.5)] text-primary rounded-xl transition-all neo-interactive active:scale-95" href="#">
+<span class="material-symbols-outlined" data-icon="sell">sell</span>
+                    Sale
+                </a>
+<a class="flex items-center gap-3 p-3 text-on-surface-variant hover:bg-surface-container-low rounded-xl transition-all neo-interactive active:scale-95" href="#">
+<span class="material-symbols-outlined" data-icon="new_releases">new_releases</span>
+                    New Arrivals
+                </a>
+</nav>
+</aside>
+<!-- Product Grid Area -->
+<section class="flex-grow">
+<div class="mb-10">
+<h2 class="text-4xl font-semibold text-on-surface font-headline tracking-tight mb-2">Best Sellers</h2>
+<p class="text-on-surface-variant font-body text-lg">Our highest-rated footwear, loved by thousands.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Product Card 1 -->
+<article class="bg-background rounded-xl p-6 neo-raised flex flex-col group">
+<div class="relative w-full aspect-square mb-6 rounded-xl overflow-hidden neo-pressed flex items-center justify-center p-4">
+<div class="absolute top-4 left-4 z-10">
+<span class="bg-[#e06c4f] text-white text-xs font-bold px-3 py-1 rounded-full shadow-md">#1 Best Seller</span>
+</div>
+<img alt="Running Shoe" class="w-full h-full object-contain filter drop-shadow-xl transition-transform duration-500 group-hover:-translate-y-2 group-hover:scale-105" data-alt="A clean, minimalist studio shot of a modern athletic running shoe floating gently over a pale neomorphic pedestal. The lighting is soft, diffuse, and casts subtle, realistic drop shadows that enhance the volumetric feel. The shoe itself features crisp white and cool indigo tones, aligning perfectly with a modern, high-end athletic footwear aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC95F61-pL2pv7kiJuyGV3Wx5dJhaks25BlnubBgRaYveHhJz5hYs3cfsxY4wROSJaJZws1vap_jddsp1QLRHJiBE8tREhlekvNcfEX5ApEx9lRYR-OpRJm95VQM-bqEh6C93uVDI3iGbf9XUuJXRoiI2hSgZgiySigCoK0oQk640JVDe3XAZlzHM2TRgdaQTB_JqJhaeZiAFdiErKRs0HiXt-TPY0kGRsgsBIU9X4NsYaDiMRbm18"/>
+</div>
+<div class="flex-grow flex flex-col justify-between">
+<div>
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline font-semibold text-xl text-on-surface">Aero Glide Pro</h3>
+<span class="font-headline font-bold text-lg text-primary">$145</span>
+</div>
+<div class="flex items-center gap-1 mb-4 text-sm text-on-surface-variant">
+<div class="flex text-tertiary">
+<span class="material-symbols-outlined filled text-[18px]">star</span>
+<span class="material-symbols-outlined filled text-[18px]">star</span>
+<span class="material-symbols-outlined filled text-[18px]">star</span>
+<span class="material-symbols-outlined filled text-[18px]">star</span>
+<span class="material-symbols-outlined filled text-[18px]">star_half</span>
+</div>
+<span class="font-medium ml-1">4.8/5</span>
+<span>(2.1k+ reviews)</span>
+</div>
+</div>
+<button class="w-full py-3 px-4 rounded-xl font-body font-semibold text-primary flex items-center justify-center gap-2 neo-raised neo-interactive group-hover:text-[#e06c4f] transition-colors mt-auto">
+<span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
+                            Quick Add
+                        </button>
+</div>
+</article>
+<!-- Product Card 2 -->
+<article class="bg-background rounded-xl p-6 neo-raised flex flex-col group">
+<div class="relative w-full aspect-square mb-6 rounded-xl overflow-hidden neo-pressed flex items-center justify-center p-4">
+<img alt="Casual Sneaker" class="w-full h-full object-contain filter drop-shadow-xl transition-transform duration-500 group-hover:-translate-y-2 group-hover:scale-105" data-alt="A clean, minimalist studio shot of a casual lifestyle sneaker resting on a soft, pale grey neomorphic surface. The lighting is soft and directional, highlighting the texture of the suede and canvas materials. The shoe features subtle indigo and cool grey accents, perfectly matching the overarching soft UI design aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJ01n52F4MFuKkgB-H4hSV-3VnXqCu7EF2YMDPYLvNosI26Xma0amunV3wcm6Cp_9oX0xlP-7lB1lx25lrigfy193AzkocyhAMlG4bxoUT_6JPHKhr1ma75rSIwAx55u5iamuII2iiKtOeMtNmYfWkPmnDw5Wi5OmWoRzsYI7ATqY2vzgslaFL7kTHM2-VmbRUtlC9bxUbN5phYpsnbQXzyKwtPvwy1gg8YiCiYC_fiP39UbZRqyU"/>
+</div>
+<div class="flex-grow flex flex-col justify-between">
+<div>
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline font-semibold text-xl text-on-surface">Urban Comfort</h3>
+<span class="font-headline font-bold text-lg text-primary">$120</span>
+</div>
+<div class="flex items-center gap-1 mb-4 text-sm text-on-surface-variant">
+<div class="flex text-tertiary">
+<span class="material-symbols-outlined filled text-[18px]">star</span>
+<span class="material-symbols-outlined filled text-[18px]">star</span>
+<span class="material-symbols-outlined filled text-[18px]">star</span>
+<span class="material-symbols-outlined filled text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+</div>
+<span class="font-medium ml-1">4.7/5</span>
+<span>(1.5k+ reviews)</span>
+</div>
+</div>
+<button class="w-full py-3 px-4 rounded-xl font-body font-semibold text-primary flex items-center justify-center gap-2 neo-raised neo-interactive group-hover:text-[#e06c4f] transition-colors mt-auto">
+<span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
+                            Quick Add
+                        </button>
+</div>
+</article>
+<!-- Product Card 3 -->
+<article class="bg-background rounded-xl p-6 neo-raised flex flex-col group">
+<div class="relative w-full aspect-square mb-6 rounded-xl overflow-hidden neo-pressed flex items-center justify-center p-4">
+<img alt="Trail Shoe" class="w-full h-full object-contain filter drop-shadow-xl transition-transform duration-500 group-hover:-translate-y-2 group-hover:scale-105" data-alt="A clean, minimalist studio shot of a rugged yet stylish trail running shoe presented against a seamless pale neomorphic backdrop. Soft, ambient lighting creates deep, satisfying shadows beneath the shoe's aggressive tread pattern. The shoe design incorporates deep violet and indigo accents, harmonizing with the brand's sophisticated color palette." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDB3nNAKKOEhX-yaKus5sjp_n_OXrcmmZHQ1JlQ0UuvRIkwSdDvqhx8B9JPh1caa7INeDH8upMwjrjk5LUHKJJWe2E7qoJ45iqGrbwnpKLW8aaNqU6lJkLLvZzAvRicO4x1HVaXxN6yhqcbXE8vhBsYnn1pOXhO1pC-Osr3n3N6kFPYoKzAG-zmgig4CRBSVbSE7R2xERzaKr788AhfsRKoJC_G8bAhzMGtyVFA4Rn_ZJLARRtjSJU"/>
+</div>
+<div class="flex-grow flex flex-col justify-between">
+<div>
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline font-semibold text-xl text-on-surface">Trail Blazer X</h3>
+<span class="font-headline font-bold text-lg text-primary">$165</span>
+</div>
+<div class="flex items-center gap-1 mb-4 text-sm text-on-surface-variant">
+<div class="flex text-tertiary">
+<span class="material-symbols-outlined filled text-[18px]">star</span>
+<span class="material-symbols-outlined filled text-[18px]">star</span>
+<span class="material-symbols-outlined filled text-[18px]">star</span>
+<span class="material-symbols-outlined filled text-[18px]">star</span>
+<span class="material-symbols-outlined filled text-[18px]">star</span>
+</div>
+<span class="font-medium ml-1">4.9/5</span>
+<span>(3.2k+ reviews)</span>
+</div>
+</div>
+<button class="w-full py-3 px-4 rounded-xl font-body font-semibold text-primary flex items-center justify-center gap-2 neo-raised neo-interactive group-hover:text-[#e06c4f] transition-colors mt-auto">
+<span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
+                            Quick Add
+                        </button>
+</div>
+</article>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-background dark:bg-background w-full rounded-t-xl mt-auto shadow-[-6px_-6px_12px_rgba(255,255,255,0.6)]">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-12 py-16 w-full max-w-7xl mx-auto">
+<div class="flex flex-col gap-4">
+<span class="font-semibold text-on-surface font-headline text-xl">SILK FOOTWEAR</span>
+<p class="font-body text-sm text-on-surface-variant">© 2024 Silk Footwear Co. All rights reserved.</p>
+</div>
+<div class="flex flex-col gap-3 font-body text-sm">
+<h4 class="font-semibold text-on-surface mb-2">Customer Care</h4>
+<a class="text-on-surface-variant hover:text-primary transition-colors cursor-pointer" href="#">Support</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors cursor-pointer" href="#">Shipping</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors cursor-pointer" href="#">Returns</a>
+</div>
+<div class="flex flex-col gap-3 font-body text-sm">
+<h4 class="font-semibold text-on-surface mb-2">Legal</h4>
+<a class="text-on-surface-variant hover:text-primary transition-colors cursor-pointer" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors cursor-pointer" href="#">Terms</a>
+</div>
+</div>
+</footer>
+</body></html>
