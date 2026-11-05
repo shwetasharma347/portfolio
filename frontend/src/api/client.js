@@ -1,7 +1,9 @@
 import { products as fallbackProducts, categories as fallbackCategories } from '../data/products';
 import { reviews as fallbackReviews, reviewStats as fallbackReviewStats } from '../data/reviews';
 
-const API_BASE = import.meta.env.VITE_API_URL || '/api';
+// Normalize API Base URL (handles with or without /api, trailing slashes, or fallback to /api)
+const rawBase = (import.meta.env.VITE_API_URL || '/api').trim().replace(/\/+$/, '');
+const API_BASE = (rawBase.startsWith('http') && !rawBase.endsWith('/api')) ? `${rawBase}/api` : rawBase;
 
 /**
  * Fetch products with optional query filters (category, isBestSeller, isTrending, search)
