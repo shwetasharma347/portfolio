@@ -333,6 +333,46 @@
   ],
   "orders": [
     {
+      "orderNumber": "SLK-568350",
+      "id": "SLK-568350",
+      "createdAt": "2026-11-05T16:18:29.573Z",
+      "status": "Confirmed",
+      "customer": {
+        "firstName": "Jane",
+        "lastName": "Doe",
+        "street": "123 Silk Avenue, Apt 4B",
+        "city": "New York",
+        "state": "NY",
+        "zip": "10001",
+        "email": ""
+      },
+      "deliveryMethod": "standard",
+      "estimatedDelivery": "3-5 Business Days",
+      "paymentMethod": "card",
+      "paymentDetails": {
+        "cardLast4": "4242",
+        "paidAt": "2026-11-05T16:18:29.573Z"
+      },
+      "items": [
+        {
+          "id": "aero-silk-runner",
+          "name": "Aero Silk Runner",
+          "price": 145,
+          "quantity": 1,
+          "size": 10,
+          "color": "Cloud White",
+          "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDFD43U9BxRhvoT97sKf1abj9n0pvtWvibKuuxjjwwTWrpgzDg7TE8dG_Mp4VQ0R2Y9qLHhhX6Ye--BtavPpcG_tbrLkT5-bV4u5UxPRLOerSf2xrJI_tTlACe9M3cDlY7nLbwbwmFL-9IpLHyvv7whU3DykZRK8q1H0jOvUqlymhBNNBjg3TuzsxIfBkCY17vPZo07QMOpBqhUUiP0KtrSQTyJPW3o-McheUew2tdxv5uv-31q9mY"
+        }
+      ],
+      "pricing": {
+        "subtotal": 145,
+        "tax": 12.325000000000001,
+        "shippingCost": 0,
+        "discount": 0,
+        "total": 157.325
+      }
+    },
+    {
       "orderNumber": "SLK-367307",
       "id": "SLK-367307",
       "createdAt": "2026-11-05T15:36:26.762Z",
