@@ -200,37 +200,81 @@
     }
   ],
   "reviewStats": {
-    "averageRating": 4.8,
-    "totalReviews": 1285,
+    "averageRating": 4.9,
+    "totalReviews": 9,
     "distribution": [
       {
         "stars": 5,
         "label": "5 Stars",
-        "percentage": 85
+        "percentage": 89
       },
       {
         "stars": 4,
         "label": "4 Stars",
-        "percentage": 10
+        "percentage": 11
       },
       {
         "stars": 3,
         "label": "3 Stars",
-        "percentage": 3
+        "percentage": 0
       },
       {
         "stars": 2,
         "label": "2 Stars",
-        "percentage": 1
+        "percentage": 0
       },
       {
         "stars": 1,
         "label": "1 Star",
-        "percentage": 1
+        "percentage": 0
       }
     ]
   },
   "reviews": [
+    {
+      "id": 1793892986704,
+      "author": "Backend Integration Tester",
+      "verified": true,
+      "rating": 5,
+      "date": "November 5, 2026",
+      "title": "Outstanding quality and comfort",
+      "content": "The neomorphic aesthetic matches the actual comfort in daily use.",
+      "helpfulCount": 1,
+      "unhelpfulCount": 0
+    },
+    {
+      "id": 1793892749995,
+      "author": "Backend Integration Tester",
+      "verified": true,
+      "rating": 5,
+      "date": "November 5, 2026",
+      "title": "Outstanding quality and comfort",
+      "content": "The neomorphic aesthetic matches the actual comfort in daily use.",
+      "helpfulCount": 1,
+      "unhelpfulCount": 0
+    },
+    {
+      "id": 1793892666441,
+      "author": "Backend Integration Tester",
+      "verified": true,
+      "rating": 5,
+      "date": "November 5, 2026",
+      "title": "Outstanding quality and comfort",
+      "content": "The neomorphic aesthetic matches the actual comfort in daily use.",
+      "helpfulCount": 1,
+      "unhelpfulCount": 0
+    },
+    {
+      "id": 1793889523830,
+      "author": "Automated Tester",
+      "verified": true,
+      "rating": 5,
+      "date": "November 5, 2026",
+      "title": "Smooth and responsive",
+      "content": "Tested routes, forms, and neomorphic UI elements.",
+      "helpfulCount": 0,
+      "unhelpfulCount": 0
+    },
     {
       "id": 1789553671925,
       "author": "E2E Tester",
@@ -289,6 +333,160 @@
   ],
   "orders": [
     {
+      "orderNumber": "SLK-367307",
+      "id": "SLK-367307",
+      "createdAt": "2026-11-05T15:36:26.762Z",
+      "status": "Shipped",
+      "customer": {
+        "firstName": "Alexander",
+        "lastName": "Pierce",
+        "street": "742 Evergreen Terrace",
+        "city": "Springfield",
+        "state": "OR",
+        "zip": "97477",
+        "email": ""
+      },
+      "deliveryMethod": "express",
+      "estimatedDelivery": "1-2 Business Days",
+      "paymentMethod": "card",
+      "paymentDetails": {
+        "cardLast4": "4242",
+        "paidAt": "2026-11-05T15:36:26.762Z"
+      },
+      "items": [
+        {
+          "id": "silk-aeris-pro",
+          "name": "Silk Aeris Pro",
+          "price": 145,
+          "quantity": 2,
+          "size": 10,
+          "color": "Standard",
+          "image": ""
+        }
+      ],
+      "pricing": {
+        "subtotal": 290,
+        "tax": 24.65,
+        "shippingCost": 15,
+        "discount": 43.5,
+        "total": 286.15
+      },
+      "updatedAt": "2026-11-05T15:36:26.773Z"
+    },
+    {
+      "orderNumber": "SLK-725443",
+      "id": "SLK-725443",
+      "createdAt": "2026-11-05T15:32:30.017Z",
+      "status": "Shipped",
+      "customer": {
+        "firstName": "Alexander",
+        "lastName": "Pierce",
+        "street": "742 Evergreen Terrace",
+        "city": "Springfield",
+        "state": "OR",
+        "zip": "97477",
+        "email": ""
+      },
+      "deliveryMethod": "express",
+      "estimatedDelivery": "1-2 Business Days",
+      "paymentMethod": "card",
+      "paymentDetails": {
+        "cardLast4": "4242",
+        "paidAt": "2026-11-05T15:32:30.017Z"
+      },
+      "items": [
+        {
+          "id": "silk-aeris-pro",
+          "name": "Silk Aeris Pro",
+          "price": 145,
+          "quantity": 2,
+          "size": 10,
+          "color": "Standard",
+          "image": ""
+        }
+      ],
+      "pricing": {
+        "subtotal": 290,
+        "tax": 24.65,
+        "shippingCost": 15,
+        "discount": 43.5,
+        "total": 286.15
+      },
+      "updatedAt": "2026-11-05T15:32:30.032Z"
+    },
+    {
+      "orderNumber": "SLK-525442",
+      "id": "SLK-525442",
+      "createdAt": "2026-11-05T15:31:06.502Z",
+      "status": "Shipped",
+      "customer": {
+        "firstName": "Alexander",
+        "lastName": "Pierce",
+        "street": "742 Evergreen Terrace",
+        "city": "Springfield",
+        "state": "OR",
+        "zip": "97477",
+        "email": ""
+      },
+      "deliveryMethod": "express",
+      "estimatedDelivery": "1-2 Business Days",
+      "paymentMethod": "card",
+      "paymentDetails": {
+        "cardLast4": "4242",
+        "paidAt": "2026-11-05T15:31:06.502Z"
+      },
+      "items": [
+        {
+          "id": "silk-aeris-pro",
+          "name": "Silk Aeris Pro",
+          "price": 145,
+          "quantity": 2,
+          "size": 10,
+          "color": "Standard",
+          "image": ""
+        }
+      ],
+      "pricing": {
+        "subtotal": 290,
+        "tax": 24.65,
+        "shippingCost": 15,
+        "discount": 43.5,
+        "total": 286.15
+      },
+      "updatedAt": "2026-11-05T15:31:06.515Z"
+    },
+    {
+      "orderNumber": "SLK-906531",
+      "createdAt": "2026-11-05T14:38:31.118Z",
+      "status": "Confirmed",
+      "customer": {
+        "street": "123 St",
+        "lastName": "User",
+        "city": "City",
+        "zip": "00000",
+        "state": "ST",
+        "firstName": "Test"
+      },
+      "deliveryMethod": "standard",
+      "estimatedDelivery": "3-5 Business Days",
+      "paymentMethod": "card",
+      "items": [
+        {
+          "price": 120,
+          "quantity": 1,
+          "name": "Test Runner",
+          "id": "test-item",
+          "size": 10
+        }
+      ],
+      "pricing": {
+        "subtotal": 120,
+        "tax": 10.2,
+        "shippingCost": 0,
+        "total": 130.2
+      }
+    },
+    {
       "orderNumber": "SLK-666020",
       "createdAt": "2026-09-16T10:14:31.995Z",
       "status": "Confirmed",
@@ -315,6 +513,29 @@
         "shippingCost": 15,
         "total": 328.2
       }
+    }
+  ],
+  "newsletter": [
+    {
+      "id": "sub-1793892666524",
+      "email": "tester-1793892666520@silkfootwear.com",
+      "subscribedAt": "2026-11-05T15:31:06.524Z",
+      "couponCode": "SILK15",
+      "discountPercent": 15
+    },
+    {
+      "id": "sub-1793892750042",
+      "email": "tester-1793892750037@silkfootwear.com",
+      "subscribedAt": "2026-11-05T15:32:30.042Z",
+      "couponCode": "SILK15",
+      "discountPercent": 15
+    },
+    {
+      "id": "sub-1793892986781",
+      "email": "tester-1793892986778@silkfootwear.com",
+      "subscribedAt": "2026-11-05T15:36:26.781Z",
+      "couponCode": "SILK15",
+      "discountPercent": 15
     }
   ]
 }

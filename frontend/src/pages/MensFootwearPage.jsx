@@ -1,16 +1,17 @@
 import React, { useState, useEffect } from 'react';
 import { ProductCard } from '../components/common/ProductCard';
 import { getProducts } from '../api/client';
+import { products as fallbackProducts } from '../data/products';
 
 export const MensFootwearPage = () => {
-  const [productsList, setProductsList] = useState([]);
+  const [productsList, setProductsList] = useState(fallbackProducts);
   const [selectedSize, setSelectedSize] = useState(10);
   const [selectedOccasion, setSelectedOccasion] = useState('All');
   const [priceMax, setPriceMax] = useState(180);
 
   useEffect(() => {
     getProducts().then((data) => {
-      setProductsList(data);
+      if (data && data.length) setProductsList(data);
     });
   }, []);
 

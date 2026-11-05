@@ -2,15 +2,16 @@ import React, { useState, useEffect } from 'react';
 import { ProductCard } from '../components/common/ProductCard';
 import { getProducts } from '../api/client';
 import { useCart } from '../context/CartContext';
+import { products as fallbackProducts } from '../data/products';
 
 export const TrendingStylesPage = () => {
   const { addToCart } = useCart();
-  const [productsList, setProductsList] = useState([]);
+  const [productsList, setProductsList] = useState(fallbackProducts);
   const [ugcLiked, setUgcLiked] = useState(false);
 
   useEffect(() => {
     getProducts().then((data) => {
-      setProductsList(data);
+      if (data && data.length) setProductsList(data);
     });
   }, []);
 
@@ -38,37 +39,39 @@ export const TrendingStylesPage = () => {
       {/* Bento Grid Layout */}
       <section className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8">
         {/* Featured Viral Style (Full Width / 8 cols on desktop) */}
-        <div className="md:col-span-8 bg-background rounded-2xl p-6 sm:p-8 neo-raised flex flex-col md:flex-row gap-6 items-center">
-          <div className="w-full md:w-1/2 aspect-square rounded-xl overflow-hidden neo-pressed p-3 flex items-center justify-center">
-            <img
-              className="w-full h-full object-cover rounded-lg"
-              alt="The Aura Runner"
-              src={auraProduct.image}
-            />
-          </div>
-          <div className="w-full md:w-1/2 flex flex-col justify-center space-y-4 pr-2">
-            <div className="inline-flex items-center gap-1.5 text-primary text-xs font-bold tracking-wider uppercase">
-              <span className="material-symbols-outlined text-base filled" style={{ fontVariationSettings: "'FILL' 1" }}>
-                local_fire_department
-              </span>
-              <span>Viral Pick</span>
+        {auraProduct && (
+          <div className="md:col-span-8 bg-background rounded-2xl p-6 sm:p-8 neo-raised flex flex-col md:flex-row gap-6 items-center">
+            <div className="w-full md:w-1/2 aspect-square rounded-xl overflow-hidden neo-pressed p-3 flex items-center justify-center">
+              <img
+                className="w-full h-full object-cover rounded-lg"
+                alt="The Aura Runner"
+                src={auraProduct.image}
+              />
             </div>
-            <h2 className="font-headline font-semibold text-3xl text-on-surface">{auraProduct.name}</h2>
-            <p className="text-on-surface-variant text-sm sm:text-base leading-relaxed">
-              Spotted on streets from Tokyo to New York. The Aura redefines daily comfort with a hyper-minimalist profile and unparalleled cushioning.
-            </p>
-            <div className="flex items-center gap-4 pt-2">
-              <span className="font-headline font-bold text-2xl text-primary">${auraProduct.price.toFixed(2)}</span>
-              <button
-                onClick={() => addToCart(auraProduct, 1, 10)}
-                className="bg-background text-primary font-semibold py-3 px-6 rounded-xl neo-raised hover:text-tertiary transition-colors neo-raised-interactive flex items-center gap-2 text-sm"
-              >
-                <span>Shop Aura</span>
-                <span className="material-symbols-outlined text-sm">arrow_forward</span>
-              </button>
+            <div className="w-full md:w-1/2 flex flex-col justify-center space-y-4 pr-2">
+              <div className="inline-flex items-center gap-1.5 text-primary text-xs font-bold tracking-wider uppercase">
+                <span className="material-symbols-outlined text-base filled" style={{ fontVariationSettings: "'FILL' 1" }}>
+                  local_fire_department
+                </span>
+                <span>Viral Pick</span>
+              </div>
+              <h2 className="font-headline font-semibold text-3xl text-on-surface">{auraProduct.name}</h2>
+              <p className="text-on-surface-variant text-sm sm:text-base leading-relaxed">
+                Spotted on streets from Tokyo to New York. The Aura redefines daily comfort with a hyper-minimalist profile and unparalleled cushioning.
+              </p>
+              <div className="flex items-center gap-4 pt-2">
+                <span className="font-headline font-bold text-2xl text-primary">${auraProduct.price?.toFixed(2)}</span>
+                <button
+                  onClick={() => addToCart(auraProduct, 1, 10)}
+                  className="bg-background text-primary font-semibold py-3 px-6 rounded-xl neo-raised hover:text-tertiary transition-colors neo-raised-interactive flex items-center gap-2 text-sm"
+                >
+                  <span>Shop Aura</span>
+                  <span className="material-symbols-outlined text-sm">arrow_forward</span>
+                </button>
+              </div>
             </div>
           </div>
-        </div>
+        )}
 
         {/* UGC Community Highlight (Side Column: 4 cols) */}
         <div className="md:col-span-4 bg-background rounded-2xl p-6 neo-raised flex flex-col justify-between">

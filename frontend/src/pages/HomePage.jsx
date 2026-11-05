@@ -1,14 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { ProductCard } from '../components/common/ProductCard';
-import { getProducts, getCategories } from '../api/client';
+import { getProducts, getCategories, subscribeNewsletter } from '../api/client';
+import { products as fallbackProducts, categories as fallbackCategories } from '../data/products';
 
 export const HomePage = () => {
   const [email, setEmail] = useState('');
   const [subscribed, setSubscribed] = useState(false);
-  const [productsList, setProductsList] = useState([]);
-  const [categoriesList, setCategoriesList] = useState([]);
-  const [loading, setLoading] = useState(true);
+  const [coupon, setCoupon] = useState('SILK15');
+  const [productsList, setProductsList] = useState(fallbackProducts);
+  const [categoriesList, setCategoriesList] = useState(fallbackCategories);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     let isMounted = true;
@@ -29,9 +31,11 @@ export const HomePage = () => {
   const featuredProduct = productsList.find((p) => p.id === 'silk-aeris-pro') || productsList[0];
   const gridProducts = productsList.filter((p) => p.id !== 'silk-aeris-pro').slice(0, 4);
 
-  const handleSubscribe = (e) => {
+  const handleSubscribe = async (e) => {
     e.preventDefault();
     if (email) {
+      const res = await subscribeNewsletter(email);
+      if (res && res.couponCode) setCoupon(res.couponCode);
       setSubscribed(true);
       setEmail('');
     }
@@ -158,7 +162,7 @@ export const HomePage = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Large Hero Card */}
-          <ProductCard product={featuredProduct} variant="featured" />
+          {featuredProduct && <ProductCard product={featuredProduct} variant="featured" />}
 
           {/* Grid Products */}
           {gridProducts.map((p) => (
@@ -181,7 +185,7 @@ export const HomePage = () => {
             {subscribed ? (
               <div className="p-4 rounded-xl neo-inset bg-background text-primary font-semibold text-center flex items-center justify-center gap-2">
                 <span className="material-symbols-outlined text-xl">check_circle</span>
-                <span>Welcome to Silk Club! Check your inbox for your 15% coupon.</span>
+                <span>Welcome to Silk Club! Use code <strong className="font-mono text-primary">{coupon}</strong> for 15% off at checkout.</span>
               </div>
             ) : (
               <form onSubmit={handleSubscribe} className="flex flex-col sm:flex-row gap-3">

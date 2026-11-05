@@ -1,7 +1,7 @@
 import { products as fallbackProducts, categories as fallbackCategories } from '../data/products';
 import { reviews as fallbackReviews, reviewStats as fallbackReviewStats } from '../data/reviews';
 
-const API_BASE = '/api';
+const API_BASE = import.meta.env.VITE_API_URL || '/api';
 
 /**
  * Fetch products with optional query filters (category, isBestSeller, isTrending, search)
@@ -132,5 +132,42 @@ export async function createOrder(orderPayload) {
   } catch (error) {
     console.error('API create order failed:', error.message);
     throw error;
+  }
+}
+
+/**
+ * Fetch an order by order number or ID
+ */
+export async function getOrder(orderId) {
+  try {
+    const res = await fetch(`${API_BASE}/orders/${orderId}`);
+    if (!res.ok) throw new Error(`HTTP error ${res.status}`);
+    const data = await res.json();
+    return data.data;
+  } catch (error) {
+    console.error('API get order failed:', error.message);
+    throw error;
+  }
+}
+
+/**
+ * Subscribe to the Silk Club newsletter
+ */
+export async function subscribeNewsletter(email) {
+  try {
+    const res = await fetch(`${API_BASE}/newsletter/subscribe`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ email })
+    });
+    if (!res.ok) throw new Error(`HTTP error ${res.status}`);
+    return await res.json();
+  } catch (error) {
+    console.warn('API subscribe failed, falling back to local simulation:', error.message);
+    return {
+      success: true,
+      couponCode: 'SILK15',
+      message: 'Welcome to Silk Club!'
+    };
   }
 }

@@ -194,7 +194,8 @@ const initialData = {
       unhelpfulCount: 0
     }
   ],
-  orders: []
+  orders: [],
+  newsletter: []
 };
 
 // Initialize DB file if not present

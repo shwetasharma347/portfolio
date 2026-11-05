@@ -4,7 +4,9 @@ import { useCart } from '../../context/CartContext';
 export const ProductCard = ({ product, showBadge = true, variant = 'standard' }) => {
   const { addToCart } = useCart();
   const [isLiked, setIsLiked] = useState(false);
-  const [selectedSize, setSelectedSize] = useState(product.sizes?.[0] || 10);
+  const [selectedSize, setSelectedSize] = useState(product?.sizes?.[0] || 10);
+
+  if (!product) return null;
 
   const renderStars = (rating) => {
     const fullStars = Math.floor(rating);

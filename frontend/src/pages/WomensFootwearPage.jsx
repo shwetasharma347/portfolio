@@ -1,15 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import { ProductCard } from '../components/common/ProductCard';
 import { getProducts } from '../api/client';
+import { products as fallbackProducts } from '../data/products';
 
 export const WomensFootwearPage = () => {
-  const [productsList, setProductsList] = useState([]);
+  const [productsList, setProductsList] = useState(fallbackProducts);
   const [activeCategory, setActiveCategory] = useState('All');
   const [sortBy, setSortBy] = useState('featured');
 
   useEffect(() => {
     getProducts().then((data) => {
-      setProductsList(data);
+      if (data && data.length) setProductsList(data);
     });
   }, []);
 

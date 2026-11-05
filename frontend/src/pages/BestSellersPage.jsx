@@ -2,14 +2,15 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { ProductCard } from '../components/common/ProductCard';
 import { getProducts } from '../api/client';
+import { products as fallbackProducts } from '../data/products';
 
 export const BestSellersPage = () => {
-  const [productsList, setProductsList] = useState([]);
+  const [productsList, setProductsList] = useState(fallbackProducts.filter((p) => p.isBestSeller));
   const [selectedFilter, setSelectedFilter] = useState('all');
 
   useEffect(() => {
     getProducts({ isBestSeller: true }).then((data) => {
-      setProductsList(data);
+      if (data && data.length) setProductsList(data);
     });
   }, []);
 
