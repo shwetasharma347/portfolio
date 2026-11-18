@@ -7,6 +7,7 @@ dist/
 frontend/dist/
 .env
 .env.*
+!.env.example
 .DS_Store
 Thumbs.db
 *.log
